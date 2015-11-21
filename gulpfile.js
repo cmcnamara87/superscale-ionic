@@ -6,6 +6,8 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+var ghPages = require('gulp-gh-pages');
+
 
 // Import at the top of the file
 var karma = require('karma').server;
@@ -64,4 +66,12 @@ gulp.task('git-check', function(done) {
     process.exit(1);
   }
   done();
+});
+
+
+gulp.task('deploy', function() {
+    return gulp.src('/www/**/*')
+        .pipe(ghPages({
+            force: true
+        }));
 });
