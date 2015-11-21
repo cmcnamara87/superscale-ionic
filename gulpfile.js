@@ -72,11 +72,11 @@ gulp.task('git-check', function (done) {
 
 gulp.task('deploy', ['manifest'], function () {
     return gulp.src('./www/**/*')
-        .pipe(ghPages());
+        .pipe(ghPages({force: true}));
 });
 
 gulp.task('manifest', function () {
-    return gulp.src(['./www/**/*'])
+    return gulp.src(['./www/js/*', 'lib/ionic/js/ionic.bundle.js', 'lib/lodash/lodash.js'])
         .pipe(calManifest({
             load: [
                 'js/cordova-app-loader-complete.js',
