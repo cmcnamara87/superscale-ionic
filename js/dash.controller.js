@@ -6,7 +6,7 @@
         .controller('DashController', DashController);
 
     /* @ngInject */
-    function DashController(scale, $http, $ionicModal, $scope, portionsFactory) {
+    function DashController(scale, scanner, $http, $ionicModal, $scope, portionsFactory) {
         /* jshint validthis: true */
         var vm = this;
 

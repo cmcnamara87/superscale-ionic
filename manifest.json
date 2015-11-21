@@ -2,7 +2,7 @@
     "files": {
         "js_app.js": {
             "filename": "js/app.js",
-            "version": "e249949cd6f098307dcc134c2f54fc5c73d5a5329677d6391b3e54fcb4f9ad95"
+            "version": "37e8012d1c32a6d503f9bf984cbf709379a4db16ba355b68e0ac4b6a07aee7e1"
         },
         "js_autoupdate.js": {
             "filename": "js/autoupdate.js",
@@ -26,7 +26,7 @@
         },
         "js_dash.controller.js": {
             "filename": "js/dash.controller.js",
-            "version": "feee9f21124e94aa69c9b83310db4c2d4f1b9d40ee0be10ae5e69839623a9e88"
+            "version": "d8b2262bd533ad1e7911bde1b5bd7a8c130abb2314abbffd9873e6e51516b3dd"
         },
         "js_dash.spec.js": {
             "filename": "js/dash.spec.js",

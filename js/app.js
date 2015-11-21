@@ -9,7 +9,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('superscale', ['ionic'])
 
-    .run(function ($ionicPlatform, bluetooth) {
+    .run(function ($ionicPlatform, bluetooth, $rootScope) {
         window.BOOTSTRAP_OK = true;
 
         $ionicPlatform.ready(function () {
