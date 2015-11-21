@@ -97,10 +97,11 @@
             manifest.root += '/';
 
         // Step 4: Save manifest for next time
-        if(!fromLocalStorage)
-            localStorage.setItem('manifest',JSON.stringify(manifest));
+        if(!fromLocalStorage) {
+            console.log('Bootstrap: New manfiest', manifest);
+            localStorage.setItem('manifest', JSON.stringify(manifest));
+        }
 
-        console.log('new manfiest', manifest);
         // Step 5: Load Scripts
         // If we're loading Cordova files, make sure Cordova is ready first!
         if(typeof window.cordova !== 'undefined'){

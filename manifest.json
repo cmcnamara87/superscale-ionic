@@ -6,7 +6,7 @@
         },
         "js_autoupdate.js": {
             "filename": "js/autoupdate.js",
-            "version": "7587fe36279b62d31373fcdb0f32342077c7910e7eb9416346d0601d3768372d"
+            "version": "a02ec14217094e2c4f76ebde8c94a758899dbc1c1276d1c66f78e1930ecacc37"
         },
         "js_bluetooth.service.js": {
             "filename": "js/bluetooth.service.js",
@@ -14,7 +14,7 @@
         },
         "js_bootstrap.js": {
             "filename": "js/bootstrap.js",
-            "version": "b8f630797dad75b7ae1b86e8520988ac61e3f8637a3ced139a3109c9eb88c33f"
+            "version": "519e08f5870906db8de20b7eca377edaf54ace3b10deac942d78d2e6749f6fde"
         },
         "js_controllers.js": {
             "filename": "js/controllers.js",
