@@ -8,7 +8,7 @@
         .factory('autoupdate', autoupdate);
 
     /* @ngInject */
-    function autoupdate() {
+    function autoupdate($q) {
 
         var service = {
             state: 'UP_TO_DATE',
@@ -35,7 +35,7 @@
         // Initialize filesystem and loader
         fs = new CordovaPromiseFS({
             persistent: isCordova, // Chrome should use temporary storage.
-            Promise: Promise
+            Promise: $q
         });
 
         loader = new CordovaAppLoader({
