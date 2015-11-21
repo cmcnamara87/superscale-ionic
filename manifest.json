@@ -76,6 +76,18 @@
             "filename": "js/templates.js",
             "version": "b07be07d1d0118067784e98e69d68d8f43d8a7980a3816e66f6700c6649de2bd"
         },
+        "css_ionic.app.css": {
+            "filename": "css/ionic.app.css",
+            "version": "b9563ccc2410df870d737a7495755be194815778e8692bfe3c0c3ba7c3fb8426"
+        },
+        "css_ionic.app.min.css": {
+            "filename": "css/ionic.app.min.css",
+            "version": "e4e4aeb130b274d206005acb55b1acb3a6617e131b8ff9814430e22f5063e532"
+        },
+        "css_style.css": {
+            "filename": "css/style.css",
+            "version": "ed8906266bb88e14f51fed86295457bc15435e0a5a834b80ad28fcb040659c4a"
+        },
         "lib_ionic_js_ionic.bundle.js": {
             "filename": "lib/ionic/js/ionic.bundle.js",
             "version": "8562af00e4335d5f05d2a803c4ed84e4c8d9498e7474d34a1346a56884e48729"
