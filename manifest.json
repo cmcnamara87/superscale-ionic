@@ -88,6 +88,10 @@
             "filename": "css/style.css",
             "version": "ed8906266bb88e14f51fed86295457bc15435e0a5a834b80ad28fcb040659c4a"
         },
+        "lib_ionic_css_ionic.css": {
+            "filename": "lib/ionic/css/ionic.css",
+            "version": "aad2a48d8900924959424452861e2d5b7b001f16f2ec12ae119dd24e8b02a385"
+        },
         "lib_ionic_js_ionic.bundle.js": {
             "filename": "lib/ionic/js/ionic.bundle.js",
             "version": "8562af00e4335d5f05d2a803c4ed84e4c8d9498e7474d34a1346a56884e48729"
