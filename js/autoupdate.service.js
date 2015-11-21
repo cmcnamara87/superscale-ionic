@@ -74,13 +74,15 @@
             service.state = 'CHECKING';
             loader.check()
                 .then(function (updateAvailable) {
-                    if(updateAvailable) {
-                        console.log('downloading new version');
-                        service.state = 'DOWNLOADING';
-                    } else {
-                        console.log('its up to date');
-                        service.state = 'UP_TO_DATE';
-                    }
+                    $rootScope.$apply(function() {
+                        if(updateAvailable) {
+                            console.log('downloading new version');
+                            service.state = 'DOWNLOADING';
+                        } else {
+                            console.log('its up to date');
+                            service.state = 'UP_TO_DATE';
+                        }
+                    });
                     console.log('Autoupdate: Downloading', updateAvailable);
                     return loader.download(onprogress);
                 })
