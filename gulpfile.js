@@ -76,7 +76,10 @@ gulp.task('deploy', ['manifest'], function () {
 });
 
 gulp.task('manifest', function () {
-    return gulp.src(['./www/js/*', 'lib/ionic/js/ionic.bundle.js', 'lib/lodash/lodash.js'])
+    return gulp.src(['js/*', 'lib/ionic/js/ionic.bundle.js', 'lib/lodash/lodash.js'], {
+        cwd: 'www',
+        base: 'www'
+    })
         .pipe(calManifest({
             load: [
                 'js/cordova-app-loader-complete.js',
@@ -90,7 +93,8 @@ gulp.task('manifest', function () {
                 'js/dash.controller.js',
                 'js/portions-factory.service.js',
                 'js/portions-prototype.service.js',
-                'js/bluetooth.service.js']
+                'js/bluetooth.service.js'
+            ]
         }))
         .pipe(gulp.dest('./www/'));
 });
