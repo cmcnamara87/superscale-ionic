@@ -6,7 +6,7 @@
         .controller('DashController', DashController);
 
     /* @ngInject */
-    function DashController(scale, scanner, $http, $ionicModal, $scope, portionsFactory) {
+    function DashController(scale, scanner, autoupdate, $http, $ionicModal, $scope, portionsFactory) {
         /* jshint validthis: true */
         var vm = this;
 
@@ -18,6 +18,7 @@
         vm.meal = [];
         vm.scale = scale;
         vm.portion = null;
+        vm.autoupdate = autoupdate;
 
         activate();
 

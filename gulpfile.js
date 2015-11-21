@@ -83,10 +83,10 @@ gulp.task('manifest', function () {
         .pipe(calManifest({
             load: [
                 'js/cordova-app-loader-complete.js',
-                'js/autoupdate.js',
                 'lib/ionic/js/ionic.bundle.js',
                 'lib/lodash/lodash.js',
                 'js/app.js',
+                'js/autoupdate.service.js',
                 'js/controllers.js',
                 'js/services.js',
                 'js/scale.service.js',

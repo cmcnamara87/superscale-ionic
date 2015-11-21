@@ -142,7 +142,6 @@
             });
         };
 
-
         AppLoader.prototype.check = function(newManifest){
             var self = this, manifest = this.manifest;
             if(typeof newManifest === "string") {
@@ -154,7 +153,7 @@
                 if(typeof newManifest === "object") {
                     resolve(newManifest);
                 } else {
-                    pegasus(self.newManifestUrl).then(resolve,reject);
+                    pegasus(self.newManifestUrl + "?"+Date.now()).then(resolve,reject);
                     setTimeout(function(){reject(new Error('new manifest timeout'));},self._checkTimeout);
                 }
             });

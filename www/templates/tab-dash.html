@@ -3,6 +3,16 @@
 
         <div class="list">
             <div class="item">
+                Version Status: {{ vm.autoupdate.state }}
+                <button class="button button-positive"
+                        ng-click="vm.autoupdate.check()">Check
+                </button>
+            </div>
+        </div>
+
+
+        <div class="list">
+            <div class="item">
                 Status: {{ vm.scale.state }}
             </div>
         </div>
