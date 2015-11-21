@@ -6,7 +6,7 @@
         },
         "autoupdate.js": {
             "filename": "autoupdate.js",
-            "version": "36e70cef47004a224f330b433d0d9a929ce0e1411c7074117af7673dce8fe271"
+            "version": "7587fe36279b62d31373fcdb0f32342077c7910e7eb9416346d0601d3768372d"
         },
         "bluetooth.service.js": {
             "filename": "bluetooth.service.js",
@@ -50,7 +50,7 @@
         },
         "scale.service.js": {
             "filename": "scale.service.js",
-            "version": "7dea12329b4bc97d5d31b336735b8925065fcba293fb412ea67de0491c65aea5"
+            "version": "e1e841149950e7e35b9d77cd1d9a0a95c236089bdfb3f2c1926443e3bd247e1b"
         },
         "scale.spec.js": {
             "filename": "scale.spec.js",
