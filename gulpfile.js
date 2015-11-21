@@ -7,6 +7,7 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
 var ghPages = require('gulp-gh-pages');
+var calManifest = require('gulp-cordova-app-loader-manifest');
 
 
 // Import at the top of the file
@@ -70,8 +71,14 @@ gulp.task('git-check', function(done) {
 
 
 gulp.task('deploy', function() {
-    return gulp.src('/www/**/*')
-        .pipe(ghPages({
-            force: true
-        }));
+    return gulp.src('./www/**/*')
+        .pipe(ghPages());
+});
+
+gulp.task('manifest', function() {
+    return gulp.src(['./www/**/*'])
+        .pipe(calManifest({
+            load: ['lib/**/*.min.js', 'js/*.js', 'lib/**/*.css']
+        }))
+        .pipe(gulp.dest('./'));
 });
