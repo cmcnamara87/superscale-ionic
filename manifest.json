@@ -8,6 +8,10 @@
             "filename": "js/autoupdate.js",
             "version": "a02ec14217094e2c4f76ebde8c94a758899dbc1c1276d1c66f78e1930ecacc37"
         },
+        "js_autoupdate.service.js": {
+            "filename": "js/autoupdate.service.js",
+            "version": "6aebc0026cdc46f6d43758941650c8af341296cf964558f6f98c7020ebe0d56f"
+        },
         "js_bluetooth.service.js": {
             "filename": "js/bluetooth.service.js",
             "version": "e2e5b999a5bd21cc17bcbbf4e38bccc98afefa33ac51ea209009553045be8565"
@@ -26,7 +30,7 @@
         },
         "js_dash.controller.js": {
             "filename": "js/dash.controller.js",
-            "version": "d8b2262bd533ad1e7911bde1b5bd7a8c130abb2314abbffd9873e6e51516b3dd"
+            "version": "c543f9af6f5e21c2765e96e31e218631856ca1a739fa33df04c21ae24fe88028"
         },
         "js_dash.spec.js": {
             "filename": "js/dash.spec.js",
@@ -75,10 +79,10 @@
     },
     "load": [
         "js/cordova-app-loader-complete.js",
-        "js/autoupdate.js",
         "lib/ionic/js/ionic.bundle.js",
         "lib/lodash/lodash.js",
         "js/app.js",
+        "js/autoupdate.service.js",
         "js/controllers.js",
         "js/services.js",
         "js/scale.service.js",
