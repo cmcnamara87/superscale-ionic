@@ -7,7 +7,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('superscale', ['ionic'])
+angular.module('superscale', ['ionic', 'templates'])
 
     .run(function ($ionicPlatform, bluetooth, $rootScope) {
         window.BOOTSTRAP_OK = true;

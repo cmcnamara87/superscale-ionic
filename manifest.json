@@ -2,7 +2,7 @@
     "files": {
         "js_app.js": {
             "filename": "js/app.js",
-            "version": "37e8012d1c32a6d503f9bf984cbf709379a4db16ba355b68e0ac4b6a07aee7e1"
+            "version": "70aa1215879dc52cbdf3e41569b71f79a634166eb27dd4835f17d76dbe904792"
         },
         "js_autoupdate.js": {
             "filename": "js/autoupdate.js",
@@ -18,7 +18,7 @@
         },
         "js_bootstrap.js": {
             "filename": "js/bootstrap.js",
-            "version": "d297d92048c79bf8cd5aa717a00306c990b6ac371592498559c3e9215a536142"
+            "version": "519e08f5870906db8de20b7eca377edaf54ace3b10deac942d78d2e6749f6fde"
         },
         "js_controllers.js": {
             "filename": "js/controllers.js",
@@ -68,6 +68,10 @@
             "filename": "js/services.js",
             "version": "617d37697d3eb2fd4f86f9af10e2e0e5b8eced7d7fbcea4c8e9a3ba6577df5e1"
         },
+        "js_templates.js": {
+            "filename": "js/templates.js",
+            "version": "dfd68a849ed92a435baf1e47523d9c21820506bebc4591a7e8125f6fb0018ae8"
+        },
         "lib_ionic_js_ionic.bundle.js": {
             "filename": "lib/ionic/js/ionic.bundle.js",
             "version": "8562af00e4335d5f05d2a803c4ed84e4c8d9498e7474d34a1346a56884e48729"
@@ -81,6 +85,7 @@
         "js/cordova-app-loader-complete.js",
         "lib/ionic/js/ionic.bundle.js",
         "lib/lodash/lodash.js",
+        "js/templates.js",
         "js/app.js",
         "js/autoupdate.service.js",
         "js/controllers.js",
