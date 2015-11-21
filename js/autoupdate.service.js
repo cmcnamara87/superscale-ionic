@@ -8,7 +8,8 @@
     /* @ngInject */
     function autoupdate() {
         var service = {
-            state: 'UP_TO_DATE'
+            state: 'UP_TO_DATE',
+            check: check
         };
 
         return service;
@@ -49,27 +50,6 @@
             cacheBuster: true
         });
 
-        // Check > Download > Update
-        function check() {
-            console.log('Autoupdate: Checking');
-            loader.check()
-                .then(function (updateAvailable) {
-                    service.state = 'DOWNLOADING';
-                    console.log('Autoupdate: Downloading', updateAvailable);
-                    return loader.download();
-                })
-                .then(function () {
-                    service.state = 'UPDATING';
-                    console.log('Autoupdate: Updating');
-                    return loader.update().then(function () {
-                        console.log('Autoupdate: Complete');
-                    });
-                }, function (err) {
-                    service.state = 'ERROR ' + err;
-                    console.error('Auto-update error:', err);
-                });
-        }
-
         // Couple events:
 
         // 1. On launch
@@ -88,6 +68,31 @@
         }
 
         document.addEventListener("webkitvisibilitychange", handleVisibilityChange, false);
+
+
+        // Check > Download > Update
+        function check() {
+            console.log('Autoupdate: Checking');
+            service.state = 'CHECKING';
+            loader.check()
+                .then(function (updateAvailable) {
+                    service.state = 'DOWNLOADING';
+                    console.log('Autoupdate: Downloading', updateAvailable);
+                    return loader.download();
+                }, function() {
+                    service.state = 'UP_TO_DATE';
+                })
+                .then(function () {
+                    service.state = 'UPDATING';
+                    console.log('Autoupdate: Updating');
+                    return loader.update().then(function () {
+                        console.log('Autoupdate: Complete');
+                    });
+                }, function (err) {
+                    service.state = 'ERROR ' + err;
+                    console.error('Auto-update error:', err);
+                });
+        }
 
     }
 
