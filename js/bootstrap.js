@@ -115,6 +115,7 @@
 //---------------------------------------------------------------------
     window.Manifest = {};
 // Step 1: Load manifest from localStorage
+    localStorage.clear('manifest');
     var manifest = JSON.parse(localStorage.getItem('manifest'));
     console.log('stored manfiest', manifest);
 // grab manifest.json location from <script manifest="..."></script>

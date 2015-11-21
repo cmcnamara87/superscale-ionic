@@ -1,5 +1,7 @@
 (function () {
 
+    console.log('did it get there?');
+
     'use strict';
     angular
         .module('superscale')
@@ -7,18 +9,12 @@
 
     /* @ngInject */
     function autoupdate() {
+
         var service = {
             state: 'UP_TO_DATE',
             check: check
         };
 
-        return service;
-
-        ////////////////
-
-        console.log('Autoupdate: File Added');
-
-        // Check for Cordova
         var isCordova = typeof cordova !== 'undefined',
         // CordovaPromiseFS
             fs,
@@ -50,8 +46,6 @@
             cacheBuster: true
         });
 
-        // Couple events:
-
         // 1. On launch
         check();
 
@@ -69,31 +63,37 @@
 
         document.addEventListener("webkitvisibilitychange", handleVisibilityChange, false);
 
+        return service;
+
+        ////////////////
+
 
         // Check > Download > Update
         function check() {
+            console.log(CordovaAppLoader);
+            console.log(loader);
             console.log('Autoupdate: Checking');
             service.state = 'CHECKING';
             loader.check()
                 .then(function (updateAvailable) {
-                    service.state = 'DOWNLOADING';
+                    if(updateAvailable) {
+                        service.state = 'DOWNLOADING';
+                    } else {
+                        service.state = 'UP_TO_DATE';
+                    }
                     console.log('Autoupdate: Downloading', updateAvailable);
                     return loader.download();
                 }, function() {
                     service.state = 'UP_TO_DATE';
                 })
                 .then(function () {
-                    service.state = 'UPDATING';
                     console.log('Autoupdate: Updating');
-                    return loader.update().then(function () {
-                        console.log('Autoupdate: Complete');
-                    });
+                    return loader.update();
                 }, function (err) {
                     service.state = 'ERROR ' + err;
                     console.error('Auto-update error:', err);
                 });
         }
-
     }
 
 })

@@ -10,7 +10,7 @@
         },
         "js_autoupdate.service.js": {
             "filename": "js/autoupdate.service.js",
-            "version": "9e1e5d7d4372f6ec66b66ed0ce26cae3c5dd042fcf281da10233904a624cc6fb"
+            "version": "f0cfd5c24698715e7d1538df0a6d4e20dce77cda0abd6e3e628e348e7cccfc89"
         },
         "js_bluetooth.service.js": {
             "filename": "js/bluetooth.service.js",
@@ -18,7 +18,7 @@
         },
         "js_bootstrap.js": {
             "filename": "js/bootstrap.js",
-            "version": "519e08f5870906db8de20b7eca377edaf54ace3b10deac942d78d2e6749f6fde"
+            "version": "d297d92048c79bf8cd5aa717a00306c990b6ac371592498559c3e9215a536142"
         },
         "js_controllers.js": {
             "filename": "js/controllers.js",
