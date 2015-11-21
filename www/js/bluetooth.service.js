@@ -11,7 +11,8 @@
 
         var service = {
             connect: connect,
-            read: read
+            read: read,
+            state: 'NOT_CONNECTED'
         };
 
         return service;
@@ -23,6 +24,8 @@
         }
 
         function connect(deviceName) {
+            service.state = 'CONNECTING';
+
             console.log('Connecting to device');
             var deferred2 = $q.defer();
 
@@ -38,6 +41,7 @@
                     console.log('Bluetooth: Found device', device);
 
                     bluetoothSerial.connect(device.uuid, function() {
+                        service.state = 'CONNECTED';
                         deferred2.resolve();
                         console.log('Bluetooth: Connected');
                         bluetoothSerial.subscribe('\n', gotData, failure);

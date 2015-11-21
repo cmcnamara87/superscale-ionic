@@ -9,10 +9,12 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('superscale', ['ionic'])
 
-    .run(function ($ionicPlatform) {
+    .run(function ($ionicPlatform, bluetooth, $rootScope) {
         window.BOOTSTRAP_OK = true;
 
         $ionicPlatform.ready(function () {
+            bluetooth.connect('UART');
+
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {

@@ -93,7 +93,8 @@ gulp.task('manifest', function () {
                 'js/dash.controller.js',
                 'js/portions-factory.service.js',
                 'js/portions-prototype.service.js',
-                'js/bluetooth.service.js'
+                'js/bluetooth.service.js',
+                'js/scanner.service.js'
             ]
         }))
         .pipe(gulp.dest('./www/'));

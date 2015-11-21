@@ -42,7 +42,9 @@
             })
             .then(function(){
                 console.log('Autoupdate: Updating');
-                return loader.update();
+                return loader.update().then(function() {
+                    console.log('Autoupdate: Complete');
+                });
             },function(err){
                 console.error('Auto-update error:',err);
             });
