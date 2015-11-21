@@ -83,6 +83,8 @@
                     }
                     console.log('Autoupdate: Downloading', updateAvailable);
                     return loader.download(onprogress);
+                }, function(error) {
+                    service.state = 'UPDATE_FAILED';
                 })
                 .then(function(manifest){
                     console.log('Autoupdate: Updating', manifest);
