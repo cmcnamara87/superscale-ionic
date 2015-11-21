@@ -84,15 +84,21 @@
                         service.state = 'UP_TO_DATE';
                     }
                     console.log('Autoupdate: Downloading', updateAvailable);
-                    return loader.download();
+                    return loader.download(onprogress);
                 })
-                .then(function () {
-                    console.log('Autoupdate: Updating');
+                .then(function(manifest){
+                    console.log('Autoupdate: Updating', manifest);
                     return loader.update();
                 }, function (err) {
                     service.state = 'ERROR ' + err;
                     console.error('Auto-update error:', err);
+                }).then(function() {
+                    console.log('update applied');
                 });
+        }
+
+        function onprogress(info) {
+            console.log('progress', info);
         }
     }
 
