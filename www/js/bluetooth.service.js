@@ -49,7 +49,7 @@
 
         function gotData(data) {
             console.log('Bluetooth Data:', data);
-            deferred.notify(parseInt(data));
+            deferred.notify(data);
         }
 
         function failure(message) {
