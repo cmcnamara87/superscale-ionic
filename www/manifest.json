@@ -2,7 +2,11 @@
     "files": {
         "index.html": {
             "filename": "index.html",
-            "version": "a437d6d51f383c2ef03d16c2eb5873c6d0de2b0eda544a82fee8457b7d2787b9"
+            "version": "313ed74420e91a045510c4d8447ef4ed90b36ea02c4baf8848860709e14a4e17"
+        },
+        "manifest.json": {
+            "filename": "manifest.json",
+            "version": "0bc6b1a315f8eb7057a8c6f4bc2ef84511d096cfb4fdcd1a5785af317c2e7bcd"
         },
         "css_style.css": {
             "filename": "css/style.css",
@@ -34,15 +38,27 @@
         },
         "js_app.js": {
             "filename": "js/app.js",
-            "version": "80f85ba79739b8f8110384ba107f0c78bfd0b58b9bea1e64755710546e245783"
+            "version": "d93bd2f32e39f476c8c56af1602166c7ebdd120327687dce1f8f25f740a50946"
+        },
+        "js_autoupdate.js": {
+            "filename": "js/autoupdate.js",
+            "version": "36e70cef47004a224f330b433d0d9a929ce0e1411c7074117af7673dce8fe271"
         },
         "js_bluetooth.service.js": {
             "filename": "js/bluetooth.service.js",
             "version": "fa40833348cf3622dcb67ec40830b1a656f05559f22a181428037b88b480cb16"
         },
+        "js_bootstrap.js": {
+            "filename": "js/bootstrap.js",
+            "version": "bc8b8b18e02587fcd56bd4bcdbcc8b98e1a5588f6031c983cf4d40023516f6d3"
+        },
         "js_controllers.js": {
             "filename": "js/controllers.js",
             "version": "b473aa1a288574c4b31ab75959d67d11f668ca7d7d5d73423fb71368c0e7de45"
+        },
+        "js_cordova-app-loader-complete.js": {
+            "filename": "js/cordova-app-loader-complete.js",
+            "version": "7ef21b855f9f63530fc7ee00bfc91bfda1a0f5d4c8cb90602c710daea285a43f"
         },
         "js_dash.controller.js": {
             "filename": "js/dash.controller.js",
@@ -104,6 +120,34 @@
             "filename": "templates/tabs.html",
             "version": "32dec21d4763d4b514755bb08469be44f93ec17e966cc248e76b1bcf8fd199c0"
         },
+        "lib_angular-animate_README.md": {
+            "filename": "lib/angular-animate/README.md",
+            "version": "147c5313ecf61739b728cfe3bceae9b6d4d2a9a56a5a782e0d07576dc6dad2e4"
+        },
+        "lib_angular-animate_angular-animate.js": {
+            "filename": "lib/angular-animate/angular-animate.js",
+            "version": "bd3b762fa5922fe8096e6f1534006c5185a2a9a033e38977879a94f36e3d8b90"
+        },
+        "lib_angular-animate_angular-animate.min.js": {
+            "filename": "lib/angular-animate/angular-animate.min.js",
+            "version": "97653bef82db77a701f9d2a415900c36078901f4e14ee3b731f36ffeb5aa9850"
+        },
+        "lib_angular-animate_angular-animate.min.js.map": {
+            "filename": "lib/angular-animate/angular-animate.min.js.map",
+            "version": "e4f865a8a15260964bc5d41e5822d6f6487c572fa5be82852fb9e3f514b49233"
+        },
+        "lib_angular-animate_bower.json": {
+            "filename": "lib/angular-animate/bower.json",
+            "version": "a69a6718f48c7667def8cdd656819ed0b746e30f7dde6db6a9961ef174483789"
+        },
+        "lib_angular-animate_index.js": {
+            "filename": "lib/angular-animate/index.js",
+            "version": "7f2f9350e5624bf86e8760d1deae03fae4477949284b49471eb67e2b6498cb7d"
+        },
+        "lib_angular-animate_package.json": {
+            "filename": "lib/angular-animate/package.json",
+            "version": "b075154e74d8822034659393a2cee2dbe15bce5d538e449390c14f34c7f9c894"
+        },
         "lib_angular_README.md": {
             "filename": "lib/angular/README.md",
             "version": "18669818dec4f33339acc3725e16a6d422d7536e20f0f7fbe8a5f20b2bb3e844"
@@ -139,34 +183,6 @@
         "lib_angular_package.json": {
             "filename": "lib/angular/package.json",
             "version": "492b4dc0f58d4a3f1a45c8ba29ae47064fcd29991d59c0447881b8d54ac71ddf"
-        },
-        "lib_angular-animate_README.md": {
-            "filename": "lib/angular-animate/README.md",
-            "version": "147c5313ecf61739b728cfe3bceae9b6d4d2a9a56a5a782e0d07576dc6dad2e4"
-        },
-        "lib_angular-animate_angular-animate.js": {
-            "filename": "lib/angular-animate/angular-animate.js",
-            "version": "bd3b762fa5922fe8096e6f1534006c5185a2a9a033e38977879a94f36e3d8b90"
-        },
-        "lib_angular-animate_angular-animate.min.js": {
-            "filename": "lib/angular-animate/angular-animate.min.js",
-            "version": "97653bef82db77a701f9d2a415900c36078901f4e14ee3b731f36ffeb5aa9850"
-        },
-        "lib_angular-animate_angular-animate.min.js.map": {
-            "filename": "lib/angular-animate/angular-animate.min.js.map",
-            "version": "e4f865a8a15260964bc5d41e5822d6f6487c572fa5be82852fb9e3f514b49233"
-        },
-        "lib_angular-animate_bower.json": {
-            "filename": "lib/angular-animate/bower.json",
-            "version": "a69a6718f48c7667def8cdd656819ed0b746e30f7dde6db6a9961ef174483789"
-        },
-        "lib_angular-animate_index.js": {
-            "filename": "lib/angular-animate/index.js",
-            "version": "7f2f9350e5624bf86e8760d1deae03fae4477949284b49471eb67e2b6498cb7d"
-        },
-        "lib_angular-animate_package.json": {
-            "filename": "lib/angular-animate/package.json",
-            "version": "b075154e74d8822034659393a2cee2dbe15bce5d538e449390c14f34c7f9c894"
         },
         "lib_angular-mocks_README.md": {
             "filename": "lib/angular-mocks/README.md",
@@ -224,26 +240,6 @@
             "filename": "lib/angular-sanitize/package.json",
             "version": "5f0cd943f57477a25b6957bb03b336d0b9d7b1d38620b11a1b4c850b04d4d1f8"
         },
-        "lib_angular-ui-router_CHANGELOG.md": {
-            "filename": "lib/angular-ui-router/CHANGELOG.md",
-            "version": "f1478b81a4e319a26b532164184c0a6c083a10fb529c7f41abf68f7be8abe14b"
-        },
-        "lib_angular-ui-router_CONTRIBUTING.md": {
-            "filename": "lib/angular-ui-router/CONTRIBUTING.md",
-            "version": "369ea6c9e4741c8da8a516a32e92616b99cfa9c0217b1b3910b672eab65b6a59"
-        },
-        "lib_angular-ui-router_LICENSE": {
-            "filename": "lib/angular-ui-router/LICENSE",
-            "version": "824db5eb5d83d8415d09f3b1ef0753ec7cfb2453b34eb767f4a200252fc299fb"
-        },
-        "lib_angular-ui-router_README.md": {
-            "filename": "lib/angular-ui-router/README.md",
-            "version": "4e0daa199bc78d4c7533b6d47b81d07e696431011a439f2c78e444334098d40a"
-        },
-        "lib_angular-ui-router_bower.json": {
-            "filename": "lib/angular-ui-router/bower.json",
-            "version": "3cdcf0df70089de02d1a4f3fcaad9da2fbf3cf4ff96f985871e28b1b1463f7de"
-        },
         "lib_ionic_README.md": {
             "filename": "lib/ionic/README.md",
             "version": "b2a8ef8ff0dc4391c442f4fea545dab13ed827e5212a0147a7036fd7d2e12dae"
@@ -268,53 +264,25 @@
             "filename": "lib/lodash/lodash.min.js",
             "version": "bf63c4491140de87027557a7c15c741f65c83d98274347b105a06a20e05ce78d"
         },
-        "lib_angular-ui-router_api_angular-ui-router.d.ts": {
-            "filename": "lib/angular-ui-router/api/angular-ui-router.d.ts",
-            "version": "27b68581885d0a253796b6b4a83969f4c6c14539debe5e84883d9e7aaa40758a"
+        "lib_angular-ui-router_CHANGELOG.md": {
+            "filename": "lib/angular-ui-router/CHANGELOG.md",
+            "version": "f1478b81a4e319a26b532164184c0a6c083a10fb529c7f41abf68f7be8abe14b"
         },
-        "lib_angular-ui-router_src_common.js": {
-            "filename": "lib/angular-ui-router/src/common.js",
-            "version": "8c87ab32f4acc86684ee946c86d3d22f35d9af5a0c04e64c7e90e740c5208a30"
+        "lib_angular-ui-router_CONTRIBUTING.md": {
+            "filename": "lib/angular-ui-router/CONTRIBUTING.md",
+            "version": "369ea6c9e4741c8da8a516a32e92616b99cfa9c0217b1b3910b672eab65b6a59"
         },
-        "lib_angular-ui-router_src_resolve.js": {
-            "filename": "lib/angular-ui-router/src/resolve.js",
-            "version": "f7fe4db96a4fa6cd2287e5d2f945dbbb9207e1f16014bc6f21dfe6df84513f36"
+        "lib_angular-ui-router_LICENSE": {
+            "filename": "lib/angular-ui-router/LICENSE",
+            "version": "824db5eb5d83d8415d09f3b1ef0753ec7cfb2453b34eb767f4a200252fc299fb"
         },
-        "lib_angular-ui-router_src_state.js": {
-            "filename": "lib/angular-ui-router/src/state.js",
-            "version": "f0ccc4686897b1713fdc6913eab1bf2dbe062128e8128aec3a1bf5bce739df0b"
+        "lib_angular-ui-router_README.md": {
+            "filename": "lib/angular-ui-router/README.md",
+            "version": "4e0daa199bc78d4c7533b6d47b81d07e696431011a439f2c78e444334098d40a"
         },
-        "lib_angular-ui-router_src_stateDirectives.js": {
-            "filename": "lib/angular-ui-router/src/stateDirectives.js",
-            "version": "d2c6dbe7fe0d8de1ee11ff1158654604d6e851df347188c6fcd6f146bc632e8e"
-        },
-        "lib_angular-ui-router_src_stateFilters.js": {
-            "filename": "lib/angular-ui-router/src/stateFilters.js",
-            "version": "8752992238e346d758024b4adbdcb083456139bd7a096cd128dd7165b6ca55ab"
-        },
-        "lib_angular-ui-router_src_templateFactory.js": {
-            "filename": "lib/angular-ui-router/src/templateFactory.js",
-            "version": "27c85ae417bb25ab00449b8757fb0d7e49b542dd8a914d122487a528dd3ac363"
-        },
-        "lib_angular-ui-router_src_urlMatcherFactory.js": {
-            "filename": "lib/angular-ui-router/src/urlMatcherFactory.js",
-            "version": "42203e4b2264b69106bf64ad7a973acad7529f04f42c5844fcce40c8588319d1"
-        },
-        "lib_angular-ui-router_src_urlRouter.js": {
-            "filename": "lib/angular-ui-router/src/urlRouter.js",
-            "version": "a11a3a884a76cfda1734f2ce062e892cca5ef571218ef2d583380a125882e515"
-        },
-        "lib_angular-ui-router_src_view.js": {
-            "filename": "lib/angular-ui-router/src/view.js",
-            "version": "3714eba6965130a7036b25e397a361e24bc408c54fc83a409ab1c846a7d6306d"
-        },
-        "lib_angular-ui-router_src_viewDirective.js": {
-            "filename": "lib/angular-ui-router/src/viewDirective.js",
-            "version": "5a81a5cce16a1f95c139a0f4267da30b66796db98490ca667db133c2c2ceb4f0"
-        },
-        "lib_angular-ui-router_src_viewScroll.js": {
-            "filename": "lib/angular-ui-router/src/viewScroll.js",
-            "version": "4d838bb7ab2288f0d76f257277078cfc9595868891183fc8527f165c9f3c94fb"
+        "lib_angular-ui-router_bower.json": {
+            "filename": "lib/angular-ui-router/bower.json",
+            "version": "3cdcf0df70089de02d1a4f3fcaad9da2fbf3cf4ff96f985871e28b1b1463f7de"
         },
         "lib_ionic_css_ionic.css": {
             "filename": "lib/ionic/css/ionic.css",
@@ -323,14 +291,6 @@
         "lib_ionic_css_ionic.min.css": {
             "filename": "lib/ionic/css/ionic.min.css",
             "version": "bffffc98437db4ef3173a1f65b777df91944eb3838ba701a1d2fad231e038dcb"
-        },
-        "lib_angular-ui-router_release_angular-ui-router.js": {
-            "filename": "lib/angular-ui-router/release/angular-ui-router.js",
-            "version": "f30ee5d39d772ef15e3c9ff0ac08bb325bf19fb10066371a48396a9bc11b5b6a"
-        },
-        "lib_angular-ui-router_release_angular-ui-router.min.js": {
-            "filename": "lib/angular-ui-router/release/angular-ui-router.min.js",
-            "version": "1a65888eadf61c16ff97ac6915531a411845aed6ccde21f314880ae94d58e75c"
         },
         "lib_ionic_fonts_ionicons.eot": {
             "filename": "lib/ionic/fonts/ionicons.eot",
@@ -347,6 +307,30 @@
         "lib_ionic_fonts_ionicons.woff": {
             "filename": "lib/ionic/fonts/ionicons.woff",
             "version": "709f2789daaff440820ebb975d3ae409af45121bdec47e39e83523490b1bc0fc"
+        },
+        "lib_ionic_js_ionic-angular.js": {
+            "filename": "lib/ionic/js/ionic-angular.js",
+            "version": "e6b16e2725979f8ddcf027d01949057a585556011014965ecb9ff4d258256a26"
+        },
+        "lib_ionic_js_ionic-angular.min.js": {
+            "filename": "lib/ionic/js/ionic-angular.min.js",
+            "version": "a598a89e743def87e9241d6f2eac9c04d0c81019ca59efabcbcd085765033622"
+        },
+        "lib_ionic_js_ionic.bundle.js": {
+            "filename": "lib/ionic/js/ionic.bundle.js",
+            "version": "8562af00e4335d5f05d2a803c4ed84e4c8d9498e7474d34a1346a56884e48729"
+        },
+        "lib_ionic_js_ionic.bundle.min.js": {
+            "filename": "lib/ionic/js/ionic.bundle.min.js",
+            "version": "11b9b21d7d23e5e4f7ff8ab21b3bd1fbc94fb89a69100be03bb158ec16ac03d0"
+        },
+        "lib_ionic_js_ionic.js": {
+            "filename": "lib/ionic/js/ionic.js",
+            "version": "ea988139f8324e8951b917e6f37dbdd143f1cbb816643b611f9beec61659b365"
+        },
+        "lib_ionic_js_ionic.min.js": {
+            "filename": "lib/ionic/js/ionic.min.js",
+            "version": "924c4714b3939d03779e1345df98ccd40821c812a121564d59f54dba5b586b79"
         },
         "lib_ionic_scss__action-sheet.scss": {
             "filename": "lib/ionic/scss/_action-sheet.scss",
@@ -488,29 +472,61 @@
             "filename": "lib/ionic/scss/ionic.scss",
             "version": "567c787debe081832a7390ed79d9ff83ebebdf41d6a9b510ba46ae9524e3f038"
         },
-        "lib_ionic_js_ionic-angular.js": {
-            "filename": "lib/ionic/js/ionic-angular.js",
-            "version": "e6b16e2725979f8ddcf027d01949057a585556011014965ecb9ff4d258256a26"
+        "lib_angular-ui-router_api_angular-ui-router.d.ts": {
+            "filename": "lib/angular-ui-router/api/angular-ui-router.d.ts",
+            "version": "27b68581885d0a253796b6b4a83969f4c6c14539debe5e84883d9e7aaa40758a"
         },
-        "lib_ionic_js_ionic-angular.min.js": {
-            "filename": "lib/ionic/js/ionic-angular.min.js",
-            "version": "a598a89e743def87e9241d6f2eac9c04d0c81019ca59efabcbcd085765033622"
+        "lib_angular-ui-router_release_angular-ui-router.js": {
+            "filename": "lib/angular-ui-router/release/angular-ui-router.js",
+            "version": "f30ee5d39d772ef15e3c9ff0ac08bb325bf19fb10066371a48396a9bc11b5b6a"
         },
-        "lib_ionic_js_ionic.bundle.js": {
-            "filename": "lib/ionic/js/ionic.bundle.js",
-            "version": "8562af00e4335d5f05d2a803c4ed84e4c8d9498e7474d34a1346a56884e48729"
+        "lib_angular-ui-router_release_angular-ui-router.min.js": {
+            "filename": "lib/angular-ui-router/release/angular-ui-router.min.js",
+            "version": "1a65888eadf61c16ff97ac6915531a411845aed6ccde21f314880ae94d58e75c"
         },
-        "lib_ionic_js_ionic.bundle.min.js": {
-            "filename": "lib/ionic/js/ionic.bundle.min.js",
-            "version": "11b9b21d7d23e5e4f7ff8ab21b3bd1fbc94fb89a69100be03bb158ec16ac03d0"
+        "lib_angular-ui-router_src_common.js": {
+            "filename": "lib/angular-ui-router/src/common.js",
+            "version": "8c87ab32f4acc86684ee946c86d3d22f35d9af5a0c04e64c7e90e740c5208a30"
         },
-        "lib_ionic_js_ionic.js": {
-            "filename": "lib/ionic/js/ionic.js",
-            "version": "ea988139f8324e8951b917e6f37dbdd143f1cbb816643b611f9beec61659b365"
+        "lib_angular-ui-router_src_resolve.js": {
+            "filename": "lib/angular-ui-router/src/resolve.js",
+            "version": "f7fe4db96a4fa6cd2287e5d2f945dbbb9207e1f16014bc6f21dfe6df84513f36"
         },
-        "lib_ionic_js_ionic.min.js": {
-            "filename": "lib/ionic/js/ionic.min.js",
-            "version": "924c4714b3939d03779e1345df98ccd40821c812a121564d59f54dba5b586b79"
+        "lib_angular-ui-router_src_state.js": {
+            "filename": "lib/angular-ui-router/src/state.js",
+            "version": "f0ccc4686897b1713fdc6913eab1bf2dbe062128e8128aec3a1bf5bce739df0b"
+        },
+        "lib_angular-ui-router_src_stateDirectives.js": {
+            "filename": "lib/angular-ui-router/src/stateDirectives.js",
+            "version": "d2c6dbe7fe0d8de1ee11ff1158654604d6e851df347188c6fcd6f146bc632e8e"
+        },
+        "lib_angular-ui-router_src_stateFilters.js": {
+            "filename": "lib/angular-ui-router/src/stateFilters.js",
+            "version": "8752992238e346d758024b4adbdcb083456139bd7a096cd128dd7165b6ca55ab"
+        },
+        "lib_angular-ui-router_src_templateFactory.js": {
+            "filename": "lib/angular-ui-router/src/templateFactory.js",
+            "version": "27c85ae417bb25ab00449b8757fb0d7e49b542dd8a914d122487a528dd3ac363"
+        },
+        "lib_angular-ui-router_src_urlMatcherFactory.js": {
+            "filename": "lib/angular-ui-router/src/urlMatcherFactory.js",
+            "version": "42203e4b2264b69106bf64ad7a973acad7529f04f42c5844fcce40c8588319d1"
+        },
+        "lib_angular-ui-router_src_urlRouter.js": {
+            "filename": "lib/angular-ui-router/src/urlRouter.js",
+            "version": "a11a3a884a76cfda1734f2ce062e892cca5ef571218ef2d583380a125882e515"
+        },
+        "lib_angular-ui-router_src_view.js": {
+            "filename": "lib/angular-ui-router/src/view.js",
+            "version": "3714eba6965130a7036b25e397a361e24bc408c54fc83a409ab1c846a7d6306d"
+        },
+        "lib_angular-ui-router_src_viewDirective.js": {
+            "filename": "lib/angular-ui-router/src/viewDirective.js",
+            "version": "5a81a5cce16a1f95c139a0f4267da30b66796db98490ca667db133c2c2ceb4f0"
+        },
+        "lib_angular-ui-router_src_viewScroll.js": {
+            "filename": "lib/angular-ui-router/src/viewScroll.js",
+            "version": "4d838bb7ab2288f0d76f257277078cfc9595868891183fc8527f165c9f3c94fb"
         },
         "lib_ionic_scss_ionicons__ionicons-font.scss": {
             "filename": "lib/ionic/scss/ionicons/_ionicons-font.scss",
@@ -530,29 +546,18 @@
         }
     },
     "load": [
+        "js/cordova-app-loader-complete.js",
+        "js/autoupdate.js",
+        "lib/ionic/js/ionic.bundle.js",
+        "lib/lodash/lodash.js",
         "js/app.js",
-        "js/bluetooth.service.js",
         "js/controllers.js",
-        "js/dash.controller.js",
-        "js/dash.spec.js",
-        "js/portions-factory.service.js",
-        "js/portions-factory.spec.js",
-        "js/portions-prototype.service.js",
-        "js/portions-prototype.spec.js",
-        "js/scale.service.js",
-        "js/scale.spec.js",
         "js/services.js",
-        "lib/angular/angular-csp.css",
-        "lib/angular/angular.min.js",
-        "lib/angular-animate/angular-animate.min.js",
-        "lib/angular-sanitize/angular-sanitize.min.js",
-        "lib/lodash/lodash.min.js",
-        "lib/ionic/css/ionic.css",
-        "lib/ionic/css/ionic.min.css",
-        "lib/angular-ui-router/release/angular-ui-router.min.js",
-        "lib/ionic/js/ionic-angular.min.js",
-        "lib/ionic/js/ionic.bundle.min.js",
-        "lib/ionic/js/ionic.min.js"
+        "js/scale.service.js",
+        "js/dash.controller.js",
+        "js/portions-factory.service.js",
+        "js/portions-prototype.service.js",
+        "js/bluetooth.service.js"
     ],
     "root": "./"
 }
