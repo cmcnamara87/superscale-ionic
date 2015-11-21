@@ -2,7 +2,7 @@
     "files": {
         "app.js": {
             "filename": "app.js",
-            "version": "d93bd2f32e39f476c8c56af1602166c7ebdd120327687dce1f8f25f740a50946"
+            "version": "9b5af49bf88acb0383496688b09eb8e088d02e48e2c9467db6587b059a671500"
         },
         "autoupdate.js": {
             "filename": "autoupdate.js",
@@ -14,7 +14,7 @@
         },
         "bootstrap.js": {
             "filename": "bootstrap.js",
-            "version": "bc8b8b18e02587fcd56bd4bcdbcc8b98e1a5588f6031c983cf4d40023516f6d3"
+            "version": "b8f630797dad75b7ae1b86e8520988ac61e3f8637a3ced139a3109c9eb88c33f"
         },
         "controllers.js": {
             "filename": "controllers.js",
@@ -50,7 +50,7 @@
         },
         "scale.service.js": {
             "filename": "scale.service.js",
-            "version": "ead3ddedecf88dc48eeb2bad2980aa1773dbb9a3442da2e5da207d41e96a2f85"
+            "version": "7dea12329b4bc97d5d31b336735b8925065fcba293fb412ea67de0491c65aea5"
         },
         "scale.spec.js": {
             "filename": "scale.spec.js",

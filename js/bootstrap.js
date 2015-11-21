@@ -100,6 +100,7 @@
         if(!fromLocalStorage)
             localStorage.setItem('manifest',JSON.stringify(manifest));
 
+        console.log('new manfiest', manifest);
         // Step 5: Load Scripts
         // If we're loading Cordova files, make sure Cordova is ready first!
         if(typeof window.cordova !== 'undefined'){
@@ -114,6 +115,7 @@
     window.Manifest = {};
 // Step 1: Load manifest from localStorage
     var manifest = JSON.parse(localStorage.getItem('manifest'));
+    console.log('stored manfiest', manifest);
 // grab manifest.json location from <script manifest="..."></script>
     var s = document.querySelector('script[manifest]');
 // Not in localStorage? Fetch it!
