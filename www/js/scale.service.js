@@ -28,18 +28,21 @@
             bluetooth.connect('UART').then(function() {
                 scale.state = 'CONNECTED';
             });
-            bluetooth.read().then(null, null, gotReading);
+            bluetooth.read().then(null, null, gotMessage);
         }
 
         function weightUpdated() {
             return deferred.promise;
         }
 
-        function gotReading(newWeight) {
-            console.log('scale got reading', newWeight);
-            scale._weight = newWeight;
-            console.log('set sacle weogt', scale._weight);
-            deferred.notify(scale.getWeight());
+        function gotMessage(message) {
+            console.log('bluetooth got reading', message);
+            var data = angular.fromJson(message);
+            if(!data.W) {
+                scale._weight = data.W;
+                console.log('set sacle weogt', scale._weight);
+                deferred.notify(scale.getWeight());
+            }
         }
 
         function getWeight() {
