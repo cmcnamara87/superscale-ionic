@@ -14,7 +14,6 @@
         var scale = {
             _weight: 0,
             _tareValue: 0,
-            connect: connect,
             getWeight: getWeight,
             isTared: isTared,
             tare: tare,
