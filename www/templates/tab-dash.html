@@ -1,0 +1,52 @@
+<ion-view view-title="Dashboard">
+    <ion-content class="padding">
+
+        <div class="list">
+            <div class="item">
+                Status: {{ vm.scale.state }}
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Scale</div>
+            <div class="item item-body">
+                Weight {{ vm.scale.getWeight() }}
+
+                <button class="button button-positive"
+                        ng-click="vm.scale.tare()">Tare
+                </button>
+            </div>
+        </div>
+
+        <div class="list card">
+            <div class="item item-divider">Portion</div>
+            <div class="item item-body">
+                <div ng-show="vm.selectedItem">
+                    <strong>{{ vm.portion.item.name }}</strong>
+                    <div>
+                        Calories: {{ vm.portion.getCalories() }}
+                    </div>
+                    <div>
+                        Weight: {{ vm.portion.getWeight() }}
+                    </div>
+                </div>
+                <button class="button button-positive"
+                        ng-click="vm.openModal()">Select Item
+                </button>
+                <button class="button button-assertive"
+                        ng-click="vm.addToMeal(vm.portion)">Add to Meal
+                </button>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="item item-divider">Meal</div>
+            <div class="item" ng-repeat="portion in vm.meal">
+                <pre>
+                    {{ portion | json }}
+                </pre>
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>
