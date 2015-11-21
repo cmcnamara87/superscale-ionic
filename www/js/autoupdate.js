@@ -1,4 +1,5 @@
 (function(){
+    console.log('Autoupdate added');
     // Check for Cordova
     var isCordova = typeof cordova !== 'undefined',
     // CordovaPromiseFS
@@ -33,11 +34,14 @@
 
     // Check > Download > Update
     function check(){
+        console.log('Autoupdate: Checking');
         loader.check()
             .then(function(){
+                console.log('Autoupdate: Downloading');
                 return loader.download();
             })
             .then(function(){
+                console.log('Autoupdate: Updating');
                 return loader.update();
             },function(err){
                 console.error('Auto-update error:',err);
