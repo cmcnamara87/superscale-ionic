@@ -70,9 +70,7 @@
 
         // Check > Download > Update
         function check() {
-            console.log(CordovaAppLoader);
-            console.log(loader);
-            console.log('Autoupdate: Checking');
+            console.log('Autoupdate: Checking...');
             service.state = 'CHECKING';
             loader.check()
                 .then(function (updateAvailable) {
