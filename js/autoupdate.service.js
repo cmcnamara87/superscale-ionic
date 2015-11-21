@@ -77,14 +77,14 @@
             loader.check()
                 .then(function (updateAvailable) {
                     if(updateAvailable) {
+                        console.log('downloading new version');
                         service.state = 'DOWNLOADING';
                     } else {
+                        console.log('its up to date');
                         service.state = 'UP_TO_DATE';
                     }
                     console.log('Autoupdate: Downloading', updateAvailable);
                     return loader.download();
-                }, function() {
-                    service.state = 'UP_TO_DATE';
                 })
                 .then(function () {
                     console.log('Autoupdate: Updating');
