@@ -2,7 +2,7 @@
     "files": {
         "js_app.js": {
             "filename": "js/app.js",
-            "version": "9b5af49bf88acb0383496688b09eb8e088d02e48e2c9467db6587b059a671500"
+            "version": "e249949cd6f098307dcc134c2f54fc5c73d5a5329677d6391b3e54fcb4f9ad95"
         },
         "js_autoupdate.js": {
             "filename": "js/autoupdate.js",
@@ -10,7 +10,7 @@
         },
         "js_bluetooth.service.js": {
             "filename": "js/bluetooth.service.js",
-            "version": "92fff0f9758d383eb1e5ee4cc96a4a9cb0f157fbb36b9fb1f7a8931ec7b31b1f"
+            "version": "e2e5b999a5bd21cc17bcbbf4e38bccc98afefa33ac51ea209009553045be8565"
         },
         "js_bootstrap.js": {
             "filename": "js/bootstrap.js",
@@ -26,7 +26,7 @@
         },
         "js_dash.controller.js": {
             "filename": "js/dash.controller.js",
-            "version": "18c86666cac36b5ab7b5c4d0468a04aea1c429c5119e5b41adf0fd12ab4e5b35"
+            "version": "feee9f21124e94aa69c9b83310db4c2d4f1b9d40ee0be10ae5e69839623a9e88"
         },
         "js_dash.spec.js": {
             "filename": "js/dash.spec.js",
@@ -50,11 +50,15 @@
         },
         "js_scale.service.js": {
             "filename": "js/scale.service.js",
-            "version": "64284dda7dff3cc50dd2d8f3ed68d51a05b73c1499a7fb8634d2d6d6497d5c13"
+            "version": "21c707e20a8310ae8c8cdc8dbda6bdb256db584b1d12067c542b56c12e74f3d0"
         },
         "js_scale.spec.js": {
             "filename": "js/scale.spec.js",
             "version": "18871f700f354ff40d8ea7cc96950ec4c25dc84faf359922579c4762e65554f1"
+        },
+        "js_scanner.service.js": {
+            "filename": "js/scanner.service.js",
+            "version": "cea5284932e91ea8f5b5eb68d7fa9c4922ede3031bad32558555defced8143e9"
         },
         "js_services.js": {
             "filename": "js/services.js",
@@ -81,7 +85,8 @@
         "js/dash.controller.js",
         "js/portions-factory.service.js",
         "js/portions-prototype.service.js",
-        "js/bluetooth.service.js"
+        "js/bluetooth.service.js",
+        "js/scanner.service.js"
     ],
     "root": "./"
 }

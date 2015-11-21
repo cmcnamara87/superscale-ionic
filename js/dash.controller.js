@@ -24,8 +24,8 @@
         ////////////////
 
         function activate() {
-            scale.connect();
             scale.weightUpdated().then(null, null, weightUpdated);
+            scanner.barcodeScanned().then(null, null, barcodeScanned);
 
             $ionicModal.fromTemplateUrl('templates/items.html', {
                 scope: $scope,
@@ -52,6 +52,15 @@
             if(vm.portion) {
                 vm.portion.setWeight(weight);
             }
+        }
+
+        function barcodeScanned(barcode) {
+            var item = _.find(vm.nutrition, {barcode: barcode});
+            if(!item) {
+                console.log('Barcode not recognised', barcode);
+                return;
+            }
+            selectItem(item);
         }
 
         function getNutritionFromGoogle() {
