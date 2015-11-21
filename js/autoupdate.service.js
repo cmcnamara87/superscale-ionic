@@ -93,6 +93,7 @@
                     service.state = 'ERROR ' + err;
                     console.error('Auto-update error:', err);
                 }).then(function() {
+                    service.state = 'UP_TO_DATE';
                     console.log('update applied');
                 });
         }

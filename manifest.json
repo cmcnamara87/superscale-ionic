@@ -1,8 +1,12 @@
 {
     "files": {
+        "js_account.controller.js": {
+            "filename": "js/account.controller.js",
+            "version": "db2110d78a22860dc57a031de4ce47efb2b8c693d363f0a5eca6b26e0475b132"
+        },
         "js_app.js": {
             "filename": "js/app.js",
-            "version": "70aa1215879dc52cbdf3e41569b71f79a634166eb27dd4835f17d76dbe904792"
+            "version": "1ebd3ed0856f8658d029d88c930a5710872e6a43540a5369462783296817af0a"
         },
         "js_autoupdate.js": {
             "filename": "js/autoupdate.js",
@@ -10,7 +14,7 @@
         },
         "js_autoupdate.service.js": {
             "filename": "js/autoupdate.service.js",
-            "version": "5c33bde23a53c43b54214af7c1fb744b5c9815b44b699a5ca54dd821c98d7bb3"
+            "version": "72e406cb858e428ef428c5f7a60ab43723fa06a847709de8480f6fa91366a837"
         },
         "js_bluetooth.service.js": {
             "filename": "js/bluetooth.service.js",
@@ -30,7 +34,7 @@
         },
         "js_dash.controller.js": {
             "filename": "js/dash.controller.js",
-            "version": "c543f9af6f5e21c2765e96e31e218631856ca1a739fa33df04c21ae24fe88028"
+            "version": "cae2385b459c5707758d4fe2b091dc9379115dae366032046d19966eb2aa975b"
         },
         "js_dash.spec.js": {
             "filename": "js/dash.spec.js",
@@ -70,7 +74,7 @@
         },
         "js_templates.js": {
             "filename": "js/templates.js",
-            "version": "c7dc547224b7db57292c6c7cdb906b90940f022f0d27600f7615816c49c24ba6"
+            "version": "b07be07d1d0118067784e98e69d68d8f43d8a7980a3816e66f6700c6649de2bd"
         },
         "lib_ionic_js_ionic.bundle.js": {
             "filename": "lib/ionic/js/ionic.bundle.js",
@@ -82,6 +86,8 @@
         }
     },
     "load": [
+        "lib/ionic/css/ionic.css",
+        "css/style.css",
         "js/cordova-app-loader-complete.js",
         "lib/ionic/js/ionic.bundle.js",
         "lib/lodash/lodash.js",
@@ -95,7 +101,8 @@
         "js/portions-factory.service.js",
         "js/portions-prototype.service.js",
         "js/bluetooth.service.js",
-        "js/scanner.service.js"
+        "js/scanner.service.js",
+        "js/account.controller.js"
     ],
     "root": "./"
 }
