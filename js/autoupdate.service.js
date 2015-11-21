@@ -8,14 +8,14 @@
     /* @ngInject */
     function autoupdate() {
         var service = {
-            state: 'LOADING'
+            state: 'UP_TO_DATE'
         };
 
         return service;
 
         ////////////////
 
-        console.log('Autoupdate added');
+        console.log('Autoupdate: File Added');
 
         // Check for Cordova
         var isCordova = typeof cordova !== 'undefined',
