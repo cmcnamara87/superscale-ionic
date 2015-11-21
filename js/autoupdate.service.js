@@ -8,7 +8,7 @@
         .factory('autoupdate', autoupdate);
 
     /* @ngInject */
-    function autoupdate($q) {
+    function autoupdate($q, $rootScope) {
 
         var service = {
             state: 'UP_TO_DATE',
