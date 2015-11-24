@@ -67,7 +67,6 @@
 
         ////////////////
 
-
         // Check > Download > Update
         function check() {
             console.log('Autoupdate: Checking...');
@@ -83,6 +82,8 @@
                     }
                     console.log('Autoupdate: Downloading', updateAvailable);
                     return loader.download(onprogress);
+                }, function(error) {
+                    service.state = 'UPDATE_FAILED';
                 })
                 .then(function(manifest){
                     console.log('Autoupdate: Updating', manifest);
@@ -91,6 +92,7 @@
                     service.state = 'ERROR ' + err;
                     console.error('Auto-update error:', err);
                 }).then(function() {
+                    service.state = 'UP_TO_DATE';
                     console.log('update applied');
                 });
         }

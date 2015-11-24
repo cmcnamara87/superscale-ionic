@@ -8,7 +8,6 @@
     /* @ngInject */
     function portionsFactory(portionsPrototype) {
 
-
         return function(data) {
             var item = null;
             console.log('creating portion');

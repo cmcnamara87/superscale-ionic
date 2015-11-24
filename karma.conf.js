@@ -18,12 +18,18 @@ module.exports = function (config) {
             'www/lib/ionic/js/ionic.bundle.js',
             'www/lib/lodash/lodash.js',
             'www/lib/angular-mocks/angular-mocks.js',
+            'www/js/app.js',
             'www/js/*.js'
         ],
 
 
         // list of files to exclude
-        exclude: [],
+        exclude: [
+            'www/js/bootstrap.js',
+            'www/js/autoupdate.js',
+            'www/js/cardova-app-loader-complete.js',
+            //'www/js/autoupdate.service.js'
+        ],
 
 
         // test results reporter to use

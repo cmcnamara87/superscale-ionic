@@ -2,12 +2,19 @@
 
 //localStorage.removeItem('manifest');
 
+//setTimeout(function() {
+//    angular.element(document).ready(function() {
+//        angular.bootstrap(document, ['superscale']);
+//    });
+//}, 1000);
+
+
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('superscale', ['ionic'])
+angular.module('superscale', ['ionic', 'templates'])
 
     .run(function ($ionicPlatform, bluetooth, $rootScope) {
         window.BOOTSTRAP_OK = true;
@@ -91,7 +98,7 @@ angular.module('superscale', ['ionic'])
                 views: {
                     'tab-account': {
                         templateUrl: 'templates/tab-account.html',
-                        controller: 'AccountCtrl'
+                        controller: 'AccountController'
                     }
                 }
             });
