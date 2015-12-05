@@ -2,11 +2,11 @@
 
 //localStorage.removeItem('manifest');
 
-setTimeout(function() {
-    angular.element(document).ready(function() {
-        angular.bootstrap(document, ['superscale']);
-    });
-}, 1000);
+//setTimeout(function() {
+//    angular.element(document).ready(function() {
+//        angular.bootstrap(document, ['superscale']);
+//    });
+//}, 1000);
 
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
@@ -20,7 +20,7 @@ angular.module('superscale', ['ionic', 'templates'])
         window.BOOTSTRAP_OK = true;
 
         $ionicPlatform.ready(function () {
-            bluetooth.connect('UART');
+            bluetooth.connect('SCALE');
 
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)

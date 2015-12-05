@@ -6,7 +6,7 @@
         },
         "js_app.js": {
             "filename": "js/app.js",
-            "version": "094ea1ea0d409b550371471f7f3eb043e39f811c22a0d42d8bebf91c86279df7"
+            "version": "e00db0e0e5c7e9a16c1360f98ea417283c7270a2618764dd465805292b20f402"
         },
         "js_autoupdate.js": {
             "filename": "js/autoupdate.js",
@@ -14,7 +14,7 @@
         },
         "js_autoupdate.service.js": {
             "filename": "js/autoupdate.service.js",
-            "version": "72e406cb858e428ef428c5f7a60ab43723fa06a847709de8480f6fa91366a837"
+            "version": "15965b9d31bb20055e17a2df800b62b0698f4bd381e70d1e0bc2c63ad3a0c0cd"
         },
         "js_bluetooth.service.js": {
             "filename": "js/bluetooth.service.js",
@@ -23,10 +23,6 @@
         "js_bootstrap.js": {
             "filename": "js/bootstrap.js",
             "version": "519e08f5870906db8de20b7eca377edaf54ace3b10deac942d78d2e6749f6fde"
-        },
-        "js_controllers.js": {
-            "filename": "js/controllers.js",
-            "version": "b473aa1a288574c4b31ab75959d67d11f668ca7d7d5d73423fb71368c0e7de45"
         },
         "js_cordova-app-loader-complete.js": {
             "filename": "js/cordova-app-loader-complete.js",
@@ -42,7 +38,7 @@
         },
         "js_portions-factory.service.js": {
             "filename": "js/portions-factory.service.js",
-            "version": "a4fea760c105f5ae3a64957711a83a1504cc7b6463939eb148e1530796938db1"
+            "version": "92beb13a74a9489b780399c29d003b6337d2d9fab2fe767cb88fd8f5eb22af69"
         },
         "js_portions-factory.spec.js": {
             "filename": "js/portions-factory.spec.js",
@@ -68,10 +64,6 @@
             "filename": "js/scanner.service.js",
             "version": "cea5284932e91ea8f5b5eb68d7fa9c4922ede3031bad32558555defced8143e9"
         },
-        "js_services.js": {
-            "filename": "js/services.js",
-            "version": "617d37697d3eb2fd4f86f9af10e2e0e5b8eced7d7fbcea4c8e9a3ba6577df5e1"
-        },
         "js_templates.js": {
             "filename": "js/templates.js",
             "version": "b07be07d1d0118067784e98e69d68d8f43d8a7980a3816e66f6700c6649de2bd"
@@ -87,18 +79,6 @@
         "css_style.css": {
             "filename": "css/style.css",
             "version": "ed8906266bb88e14f51fed86295457bc15435e0a5a834b80ad28fcb040659c4a"
-        },
-        "lib_ionic_css_ionic.css": {
-            "filename": "lib/ionic/css/ionic.css",
-            "version": "aad2a48d8900924959424452861e2d5b7b001f16f2ec12ae119dd24e8b02a385"
-        },
-        "lib_ionic_js_ionic.bundle.js": {
-            "filename": "lib/ionic/js/ionic.bundle.js",
-            "version": "8562af00e4335d5f05d2a803c4ed84e4c8d9498e7474d34a1346a56884e48729"
-        },
-        "lib_lodash_lodash.js": {
-            "filename": "lib/lodash/lodash.js",
-            "version": "31ef498e961eaee57b5458cf0b6929da737338eb37a371f0fa720e7ba15db0fb"
         }
     },
     "load": [

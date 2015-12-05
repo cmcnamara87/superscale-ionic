@@ -67,7 +67,6 @@
 
         ////////////////
 
-
         // Check > Download > Update
         function check() {
             console.log('Autoupdate: Checking...');
