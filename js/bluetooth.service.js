@@ -35,7 +35,7 @@
                 }
 
                 bluetoothSerial.list(function(devices) {
-                    console.log(devices);
+                    console.log('Devices', devices);
                     // get device
                     var device = _.find(devices, {name: deviceName});
                     console.log('Bluetooth: Found device', device);
