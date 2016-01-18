@@ -6,7 +6,7 @@
         .factory('bluetooth', bluetooth);
 
     /* @ngInject */
-    function bluetooth($q, $ionicPlatform) {
+    function bluetooth($q, $ionicPlatform, $interval, bluetoothSerial) {
         var deferred = $q.defer();
 
         var service = {
@@ -34,6 +34,11 @@
                     return;
                 }
 
+                $interval(function() {
+                    bluetoothSerial.list(function(devices) {
+                        console.log('Devices', devices);
+                    });
+                }, 1000);
                 bluetoothSerial.list(function(devices) {
                     console.log('Devices', devices);
                     // get device

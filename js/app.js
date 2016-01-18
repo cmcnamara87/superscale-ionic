@@ -15,12 +15,32 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 angular.module('superscale', ['ionic', 'templates'])
-
+    .constant('bluetoothSerial', window.bluetoothSerial)
     .run(function ($ionicPlatform, bluetooth, $rootScope) {
+        console.log('running');
         window.BOOTSTRAP_OK = true;
 
         $ionicPlatform.ready(function () {
-            bluetooth.connect('SCALE');
+
+            console.log('scanning');
+            setTimeout(function() {
+                window.ble.scan([], 5, function(device) {
+                    if(device.name === 'SCALE') {
+                        // its the scale!
+                        console.log(device);
+                        console.log('connecting');
+                        window.ble.connect(device.id, console.log, console.error);
+                    }
+                }, function(error) {
+                    console.error('failed to find devices', error);
+                });
+            }, 10000);
+
+
+
+            //bluetooth.connect('SCALE');
+
+
 
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
@@ -107,3 +127,10 @@ angular.module('superscale', ['ionic', 'templates'])
         $urlRouterProvider.otherwise('/tab/dash');
 
     });
+
+setTimeout(function() {
+    angular.element(document).ready(function() {
+        console.log('bootstrapping now');
+        angular.bootstrap(document, ['superscale']);
+    });
+}, 0);

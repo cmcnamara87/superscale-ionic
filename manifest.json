@@ -6,7 +6,7 @@
         },
         "js_app.js": {
             "filename": "js/app.js",
-            "version": "e00db0e0e5c7e9a16c1360f98ea417283c7270a2618764dd465805292b20f402"
+            "version": "16f625e83eec9830316643f05287ecd9dbf09977b925f1dfb0e8ad2044db6716"
         },
         "js_autoupdate.js": {
             "filename": "js/autoupdate.js",
@@ -14,15 +14,15 @@
         },
         "js_autoupdate.service.js": {
             "filename": "js/autoupdate.service.js",
-            "version": "15965b9d31bb20055e17a2df800b62b0698f4bd381e70d1e0bc2c63ad3a0c0cd"
+            "version": "900cb48b77591a782f1314082bc713f706212230e0600f058d24721e1d9b984c"
         },
         "js_bluetooth.service.js": {
             "filename": "js/bluetooth.service.js",
-            "version": "c661a366a004c37eb9d5deea03ec97cff4b1afa804e81821934e720679f40fd5"
+            "version": "336bd5ce5018556f191602e48502ad0db09aa9d5095a141e15dc51ef164ad1c1"
         },
         "js_bootstrap.js": {
             "filename": "js/bootstrap.js",
-            "version": "519e08f5870906db8de20b7eca377edaf54ace3b10deac942d78d2e6749f6fde"
+            "version": "5eb6c147299f5051d531ef9385f687209bf24ee1741e2eb468a325c463d2a8c0"
         },
         "js_cordova-app-loader-complete.js": {
             "filename": "js/cordova-app-loader-complete.js",
@@ -74,24 +74,34 @@
         },
         "css_ionic.app.min.css": {
             "filename": "css/ionic.app.min.css",
-            "version": "e4e4aeb130b274d206005acb55b1acb3a6617e131b8ff9814430e22f5063e532"
+            "version": "993f9a1241f8198337e3ba530c5cdff0656a9222920eb15772de551ae2f9c5b2"
         },
         "css_style.css": {
             "filename": "css/style.css",
             "version": "ed8906266bb88e14f51fed86295457bc15435e0a5a834b80ad28fcb040659c4a"
+        },
+        "lib_ionic_css_ionic.css": {
+            "filename": "lib/ionic/css/ionic.css",
+            "version": "aad2a48d8900924959424452861e2d5b7b001f16f2ec12ae119dd24e8b02a385"
+        },
+        "lib_ionic_js_ionic.bundle.js": {
+            "filename": "lib/ionic/js/ionic.bundle.js",
+            "version": "d2d9492e70fb000c1c72bd93b1b6632c2b5a8af0143544932ad4bdc87546d8fa"
+        },
+        "lib_lodash_lodash.js": {
+            "filename": "lib/lodash/lodash.js",
+            "version": "31ef498e961eaee57b5458cf0b6929da737338eb37a371f0fa720e7ba15db0fb"
         }
     },
     "load": [
+        "lib/ionic/js/ionic.bundle.js",
         "lib/ionic/css/ionic.css",
         "css/style.css",
         "js/cordova-app-loader-complete.js",
-        "lib/ionic/js/ionic.bundle.js",
         "lib/lodash/lodash.js",
         "js/templates.js",
         "js/app.js",
         "js/autoupdate.service.js",
-        "js/controllers.js",
-        "js/services.js",
         "js/scale.service.js",
         "js/dash.controller.js",
         "js/portions-factory.service.js",
