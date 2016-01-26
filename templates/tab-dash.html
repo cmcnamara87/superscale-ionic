@@ -1,14 +1,14 @@
 <ion-view view-title="Dashboard">
     <ion-content class="padding">
 
-        <div class="list">
-            <div class="item">
-                Version Status: {{ vm.autoupdate.state }}
-                <button class="button button-positive"
-                        ng-click="vm.autoupdate.check()">Check
-                </button>
-            </div>
-        </div>
+        <!--<div class="list">-->
+            <!--<div class="item">-->
+                <!--Version Status: {{ vm.autoupdate.state }}-->
+                <!--<button class="button button-positive"-->
+                        <!--ng-click="vm.autoupdate.check()">Check-->
+                <!--</button>-->
+            <!--</div>-->
+        <!--</div>-->
 
 
         <div class="list">
@@ -19,11 +19,10 @@
         <div class="list card">
             <div class="item item-divider">Scale</div>
             <div class="item item-body">
-                Weight {{ vm.scale.getWeight() }}
-
-                <button class="button button-positive"
+                <button class="button button-positive" style="float:right;"
                         ng-click="vm.scale.tare()">Tare
                 </button>
+                Weight {{ vm.scale.getWeight() }}
             </div>
         </div>
 
@@ -42,7 +41,7 @@
                 <button class="button button-positive"
                         ng-click="vm.openModal()">Select Item
                 </button>
-                <button class="button button-assertive"
+                <button class="button button-assertive" ng-show="vm.portion.item"
                         ng-click="vm.addToMeal(vm.portion)">Add to Meal
                 </button>
             </div>

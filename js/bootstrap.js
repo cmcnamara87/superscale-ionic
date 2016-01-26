@@ -114,20 +114,25 @@
     }
 //---------------------------------------------------------------------
     window.Manifest = {};
-// Step 1: Load manifest from localStorage
-    localStorage.removeItem('manifest');
+    // Step 1: Load manifest from localStorage
+    if (location.origin === 'http://localhost:8100') {
+        localStorage.removeItem('manifest');
+    }
     var manifest = JSON.parse(localStorage.getItem('manifest'));
     console.log('stored manfiest', manifest);
-// grab manifest.json location from <script manifest="..."></script>
+
+    // grab manifest.json location from <script manifest="..."></script>
     var s = document.querySelector('script[manifest]');
-// Not in localStorage? Fetch it!
+
+    // Not in localStorage? Fetch it!
     if(!manifest){
         var url = (s? s.getAttribute('manifest'): null) || 'manifest.json';
         // get manifest.json, then loadManifest.
         pegasus(url).then(loadManifest,function(xhr){
             console.error('Could not download '+url+': '+xhr.status);
         });
-// Manifest was in localStorage. Load it immediatly.
+
+    // Manifest was in localStorage. Load it immediatly.
     } else {
         loadManifest(manifest,true,s.getAttribute('timeout') || 10000);
     }

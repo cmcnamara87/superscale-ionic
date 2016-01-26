@@ -1,9 +1,15 @@
 <ion-view view-title="Account">
-  <ion-content>
-    <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
-    </ion-list>
-  </ion-content>
+    <ion-content>
+        <ion-list>
+            <a class="item" ng-click="vm.autoupdate.check()">
+                <h2>
+                    {{ vm.autoupdate.state }}
+                </h2>
+
+                <p>
+                    App Status
+                </p>
+            </a>
+        </ion-list>
+    </ion-content>
 </ion-view>

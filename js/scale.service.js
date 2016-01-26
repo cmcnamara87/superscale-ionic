@@ -27,8 +27,8 @@
             console.log('bluetooth got reading', message);
             var data = JSON.parse(message);
             console.log('message json', data);
-            if(data.W) {
-                scale._weight = data.W;
+            if(data.w) {
+                scale._weight = data.w;
                 console.log('set sacle weogt', scale._weight);
                 deferred.notify(scale.getWeight());
             }

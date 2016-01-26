@@ -1,12 +1,48 @@
 {
     "files": {
-        "js_account.controller.js": {
-            "filename": "js/account.controller.js",
-            "version": "db2110d78a22860dc57a031de4ce47efb2b8c693d363f0a5eca6b26e0475b132"
+        "lib_ionic_js_ionic.bundle.js": {
+            "filename": "lib/ionic/js/ionic.bundle.js",
+            "version": "d2d9492e70fb000c1c72bd93b1b6632c2b5a8af0143544932ad4bdc87546d8fa"
+        },
+        "css_ionic.app.css": {
+            "filename": "css/ionic.app.css",
+            "version": "b9563ccc2410df870d737a7495755be194815778e8692bfe3c0c3ba7c3fb8426"
+        },
+        "lib_ionic_fonts_ionicons.eot": {
+            "filename": "lib/ionic/fonts/ionicons.eot",
+            "version": "a4803d7bdeb478a5b9238fe74d8aaa98dafe2e8e68fccbd0e3f4dced823f27f0"
+        },
+        "lib_ionic_fonts_ionicons.svg": {
+            "filename": "lib/ionic/fonts/ionicons.svg",
+            "version": "a627d9068c1235d9b3c95c405eb6ecb64a290b159cf5e926c0d96d89b24cd5fc"
+        },
+        "lib_ionic_fonts_ionicons.ttf": {
+            "filename": "lib/ionic/fonts/ionicons.ttf",
+            "version": "2ba7f20b1d8990e17a47fe3d88e4c766628aaa2baf1dd30fca0a0db59836f5f9"
+        },
+        "lib_ionic_fonts_ionicons.woff": {
+            "filename": "lib/ionic/fonts/ionicons.woff",
+            "version": "709f2789daaff440820ebb975d3ae409af45121bdec47e39e83523490b1bc0fc"
+        },
+        "lib_lodash_lodash.js": {
+            "filename": "lib/lodash/lodash.js",
+            "version": "31ef498e961eaee57b5458cf0b6929da737338eb37a371f0fa720e7ba15db0fb"
+        },
+        "js_cordova-app-loader-complete.js": {
+            "filename": "js/cordova-app-loader-complete.js",
+            "version": "76299c410fab485ec88d1e8765d935320fe4d172897d5f675fa410d66bd3f107"
+        },
+        "js_templates.js": {
+            "filename": "js/templates.js",
+            "version": "47f3f074c56461db51a1a3a282e1dd32f4204c637027092bd02ac6707e75a7bb"
         },
         "js_app.js": {
             "filename": "js/app.js",
-            "version": "16f625e83eec9830316643f05287ecd9dbf09977b925f1dfb0e8ad2044db6716"
+            "version": "c3dccfc9504fb425d423dbcb71e22a9c9054343176da19586559b2becfdbb04d"
+        },
+        "js_account.controller.js": {
+            "filename": "js/account.controller.js",
+            "version": "f65de8e1107c93a6cd5c2e74d91ab6e0bddea77db6b099a92d6ca1d5eb42d7f5"
         },
         "js_autoupdate.js": {
             "filename": "js/autoupdate.js",
@@ -14,19 +50,11 @@
         },
         "js_autoupdate.service.js": {
             "filename": "js/autoupdate.service.js",
-            "version": "900cb48b77591a782f1314082bc713f706212230e0600f058d24721e1d9b984c"
+            "version": "34ccd39f2d8f76abccee156125cc7534607fb148d4a12044b737bd076fdadb21"
         },
         "js_bluetooth.service.js": {
             "filename": "js/bluetooth.service.js",
-            "version": "336bd5ce5018556f191602e48502ad0db09aa9d5095a141e15dc51ef164ad1c1"
-        },
-        "js_bootstrap.js": {
-            "filename": "js/bootstrap.js",
-            "version": "5eb6c147299f5051d531ef9385f687209bf24ee1741e2eb468a325c463d2a8c0"
-        },
-        "js_cordova-app-loader-complete.js": {
-            "filename": "js/cordova-app-loader-complete.js",
-            "version": "76299c410fab485ec88d1e8765d935320fe4d172897d5f675fa410d66bd3f107"
+            "version": "eb910dfdebc94a2d5cc91cc6501a0a60c328327b9145bbce10606047840be26b"
         },
         "js_dash.controller.js": {
             "filename": "js/dash.controller.js",
@@ -54,7 +82,7 @@
         },
         "js_scale.service.js": {
             "filename": "js/scale.service.js",
-            "version": "272f83fc4828630f2891b94904dfded7ddbb06b40c4f99bbd02d9de045c3cf8d"
+            "version": "2747bd1b08f0f9348119380f939ce5925e171da8d232caefdffc64fc7ca7eeab"
         },
         "js_scale.spec.js": {
             "filename": "js/scale.spec.js",
@@ -63,52 +91,32 @@
         "js_scanner.service.js": {
             "filename": "js/scanner.service.js",
             "version": "cea5284932e91ea8f5b5eb68d7fa9c4922ede3031bad32558555defced8143e9"
-        },
-        "js_templates.js": {
-            "filename": "js/templates.js",
-            "version": "b07be07d1d0118067784e98e69d68d8f43d8a7980a3816e66f6700c6649de2bd"
-        },
-        "css_ionic.app.css": {
-            "filename": "css/ionic.app.css",
-            "version": "b9563ccc2410df870d737a7495755be194815778e8692bfe3c0c3ba7c3fb8426"
-        },
-        "css_ionic.app.min.css": {
-            "filename": "css/ionic.app.min.css",
-            "version": "993f9a1241f8198337e3ba530c5cdff0656a9222920eb15772de551ae2f9c5b2"
-        },
-        "css_style.css": {
-            "filename": "css/style.css",
-            "version": "ed8906266bb88e14f51fed86295457bc15435e0a5a834b80ad28fcb040659c4a"
-        },
-        "lib_ionic_css_ionic.css": {
-            "filename": "lib/ionic/css/ionic.css",
-            "version": "aad2a48d8900924959424452861e2d5b7b001f16f2ec12ae119dd24e8b02a385"
-        },
-        "lib_ionic_js_ionic.bundle.js": {
-            "filename": "lib/ionic/js/ionic.bundle.js",
-            "version": "d2d9492e70fb000c1c72bd93b1b6632c2b5a8af0143544932ad4bdc87546d8fa"
-        },
-        "lib_lodash_lodash.js": {
-            "filename": "lib/lodash/lodash.js",
-            "version": "31ef498e961eaee57b5458cf0b6929da737338eb37a371f0fa720e7ba15db0fb"
         }
     },
     "load": [
         "lib/ionic/js/ionic.bundle.js",
-        "lib/ionic/css/ionic.css",
-        "css/style.css",
-        "js/cordova-app-loader-complete.js",
+        "css/ionic.app.css",
+        "lib/ionic/fonts/ionicons.eot",
+        "lib/ionic/fonts/ionicons.svg",
+        "lib/ionic/fonts/ionicons.ttf",
+        "lib/ionic/fonts/ionicons.woff",
         "lib/lodash/lodash.js",
+        "js/cordova-app-loader-complete.js",
         "js/templates.js",
         "js/app.js",
+        "js/account.controller.js",
+        "js/autoupdate.js",
         "js/autoupdate.service.js",
-        "js/scale.service.js",
-        "js/dash.controller.js",
-        "js/portions-factory.service.js",
-        "js/portions-prototype.service.js",
         "js/bluetooth.service.js",
-        "js/scanner.service.js",
-        "js/account.controller.js"
+        "js/dash.controller.js",
+        "js/dash.spec.js",
+        "js/portions-factory.service.js",
+        "js/portions-factory.spec.js",
+        "js/portions-prototype.service.js",
+        "js/portions-prototype.spec.js",
+        "js/scale.service.js",
+        "js/scale.spec.js",
+        "js/scanner.service.js"
     ],
     "root": "./"
 }

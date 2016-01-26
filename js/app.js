@@ -16,31 +16,13 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('superscale', ['ionic', 'templates'])
     .constant('bluetoothSerial', window.bluetoothSerial)
-    .run(function ($ionicPlatform, bluetooth, $rootScope) {
+    .run(function ($ionicPlatform, bluetooth, $rootScope, autoupdate) {
         console.log('running');
-        window.BOOTSTRAP_OK = true;
+        autoupdate.bootstrapOk();
 
         $ionicPlatform.ready(function () {
 
-            console.log('scanning');
-            setTimeout(function() {
-                window.ble.scan([], 5, function(device) {
-                    if(device.name === 'SCALE') {
-                        // its the scale!
-                        console.log(device);
-                        console.log('connecting');
-                        window.ble.connect(device.id, console.log, console.error);
-                    }
-                }, function(error) {
-                    console.error('failed to find devices', error);
-                });
-            }, 10000);
-
-
-
-            //bluetooth.connect('SCALE');
-
-
+            bluetooth.connect();
 
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
@@ -53,16 +35,6 @@ angular.module('superscale', ['ionic', 'templates'])
                 // org.apache.cordova.statusbar required
                 StatusBar.styleDefault();
             }
-
-            //bluetoothSerial.discoverUnpaired(success, failure);
-
-            //bluetoothSerial.connect(macAddress_or_uuid, function() {
-            //    window.alert('success');
-            //    console.log('success');
-            //}, function(message) {
-            //    console.log('failure');
-            //    window.alert('failure');
-            //});
         });
     })
 
@@ -118,7 +90,7 @@ angular.module('superscale', ['ionic', 'templates'])
                 views: {
                     'tab-account': {
                         templateUrl: 'templates/tab-account.html',
-                        controller: 'AccountController'
+                        controller: 'AccountController  as vm'
                     }
                 }
             });
@@ -128,8 +100,8 @@ angular.module('superscale', ['ionic', 'templates'])
 
     });
 
-setTimeout(function() {
-    angular.element(document).ready(function() {
+setTimeout(function () {
+    angular.element(document).ready(function () {
         console.log('bootstrapping now');
         angular.bootstrap(document, ['superscale']);
     });
