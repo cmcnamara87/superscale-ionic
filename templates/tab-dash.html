@@ -1,16 +1,5 @@
 <ion-view view-title="Dashboard">
     <ion-content class="padding">
-
-        <!--<div class="list">-->
-            <!--<div class="item">-->
-                <!--Version Status: {{ vm.autoupdate.state }}-->
-                <!--<button class="button button-positive"-->
-                        <!--ng-click="vm.autoupdate.check()">Check-->
-                <!--</button>-->
-            <!--</div>-->
-        <!--</div>-->
-
-
         <div class="list">
             <div class="item">
                 Bluetooth: {{ vm.bluetooth.state }}
@@ -22,7 +11,7 @@
                 <button class="button button-positive" style="float:right;"
                         ng-click="vm.scale.tare()">Tare
                 </button>
-                Weight {{ vm.scale.getWeight() }}
+                Weight: {{ vm.scale.getWeight() }}g
             </div>
         </div>
 
