@@ -60,33 +60,17 @@
             "filename": "js/dash.controller.js",
             "version": "cae2385b459c5707758d4fe2b091dc9379115dae366032046d19966eb2aa975b"
         },
-        "js_dash.spec.js": {
-            "filename": "js/dash.spec.js",
-            "version": "d229f17ac8970d410aa1b8b0a4a0f9537336a521815012eaf026d82c481802bb"
-        },
         "js_portions-factory.service.js": {
             "filename": "js/portions-factory.service.js",
             "version": "92beb13a74a9489b780399c29d003b6337d2d9fab2fe767cb88fd8f5eb22af69"
-        },
-        "js_portions-factory.spec.js": {
-            "filename": "js/portions-factory.spec.js",
-            "version": "5b71c1b219503655d71a5919f98d68af8baf3c7cbe2b3c30d3bd22c2d39d31b7"
         },
         "js_portions-prototype.service.js": {
             "filename": "js/portions-prototype.service.js",
             "version": "de8ba141946403c6a7418b565880684d1f2b26c10cf5858df44e2ca968d94b2c"
         },
-        "js_portions-prototype.spec.js": {
-            "filename": "js/portions-prototype.spec.js",
-            "version": "f0f33a799755565ae2a04e8837f131b8a0c921f6ae36a74697e40aee6cd75b1d"
-        },
         "js_scale.service.js": {
             "filename": "js/scale.service.js",
             "version": "2747bd1b08f0f9348119380f939ce5925e171da8d232caefdffc64fc7ca7eeab"
-        },
-        "js_scale.spec.js": {
-            "filename": "js/scale.spec.js",
-            "version": "18871f700f354ff40d8ea7cc96950ec4c25dc84faf359922579c4762e65554f1"
         },
         "js_scanner.service.js": {
             "filename": "js/scanner.service.js",
@@ -109,13 +93,9 @@
         "js/autoupdate.service.js",
         "js/bluetooth.service.js",
         "js/dash.controller.js",
-        "js/dash.spec.js",
         "js/portions-factory.service.js",
-        "js/portions-factory.spec.js",
         "js/portions-prototype.service.js",
-        "js/portions-prototype.spec.js",
         "js/scale.service.js",
-        "js/scale.spec.js",
         "js/scanner.service.js"
     ],
     "root": "./"
